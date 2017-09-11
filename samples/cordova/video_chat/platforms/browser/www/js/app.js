@@ -105,10 +105,7 @@
             },
             'join': function() {
                 /** Before use WebRTC checking WebRTC is avaible */
-                if (!QB.webrtc) {
-                    alert('Error: ' + CONFIG.MESSAGES.webrtc_not_avaible);
-                    return;
-                }
+      
 
                 if (!_.isEmpty(app.caller)) {
                     app.router.navigate('dashboard');
